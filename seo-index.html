@@ -1,0 +1,248 @@
+<!-- ============================================================
+  LOCAL SEO EXPERIENCE SECTION  |  Muhammed Amanulla K T
+  Drop-in block: paste inside <body> where you want the section.
+  Everything is scoped to #local-seo, so it won't clash with your site.
+  Replace the three .case-shot placeholders with your GBP screenshots
+  (see the <img> comments in each card).
+============================================================ -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<section id="local-seo" aria-labelledby="ls-title">
+<style>
+#local-seo{
+  --blue:#1530ff; --blue-d:#0a1fc4; --ink:#0b1020; --muted:#5a6275;
+  --bg:#f5f7ff; --card:#ffffff; --line:#e3e8fb; --green:#12b76a;
+  font-family:'Plus Jakarta Sans',system-ui,sans-serif; color:var(--ink);
+  background:var(--bg); padding:96px 20px; position:relative; overflow:hidden;
+}
+#local-seo *{box-sizing:border-box}
+#local-seo::before{content:"";position:absolute;top:-180px;right:-160px;width:520px;height:520px;border-radius:50%;
+  background:radial-gradient(circle,rgba(21,48,255,.16),transparent 65%);pointer-events:none}
+#local-seo::after{content:"";position:absolute;bottom:-200px;left:-160px;width:560px;height:560px;border-radius:50%;
+  background:radial-gradient(circle,rgba(21,48,255,.10),transparent 65%);pointer-events:none}
+#local-seo .wrap{max-width:1140px;margin:0 auto;position:relative;z-index:1}
+#local-seo .eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:700;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--blue);background:#e8ecff;padding:8px 14px;border-radius:999px}
+#local-seo .eyebrow i{width:7px;height:7px;border-radius:50%;background:var(--blue);display:block}
+#local-seo h2{font-size:clamp(34px,5.4vw,64px);line-height:1.04;font-weight:800;letter-spacing:-.03em;margin:22px 0 18px;max-width:880px}
+#local-seo h2 em{font-style:normal;color:var(--blue)}
+#local-seo .lead{font-size:clamp(16px,1.8vw,20px);color:var(--muted);max-width:660px;line-height:1.6;margin:0}
+#local-seo .sub{margin:96px 0 28px;display:flex;align-items:end;justify-content:space-between;gap:16px;flex-wrap:wrap}
+#local-seo .sub h3{font-size:clamp(24px,3vw,34px);font-weight:800;letter-spacing:-.02em;margin:0}
+#local-seo .sub p{margin:0;color:var(--muted);font-size:15px;max-width:420px}
+
+/* stats */
+#local-seo .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:56px}
+#local-seo .stat{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:30px 28px;position:relative;
+  transition:transform .35s,box-shadow .35s}
+#local-seo .stat:hover{transform:translateY(-6px);box-shadow:0 24px 50px -24px rgba(21,48,255,.35)}
+#local-seo .stat.hero{background:linear-gradient(145deg,var(--blue),var(--blue-d));color:#fff;border:0}
+#local-seo .stat .num{font-size:clamp(52px,6vw,76px);font-weight:800;letter-spacing:-.04em;line-height:1}
+#local-seo .stat .lbl{margin-top:12px;font-size:15px;font-weight:600;line-height:1.45;color:var(--muted)}
+#local-seo .stat.hero .lbl{color:rgba(255,255,255,.88)}
+#local-seo .stat .tag{position:absolute;top:22px;right:22px;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
+  padding:6px 10px;border-radius:999px;background:rgba(255,255,255,.18)}
+#local-seo .stat:not(.hero) .tag{background:#e8ecff;color:var(--blue)}
+
+/* skills */
+#local-seo .skills{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+#local-seo .skill{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px;transition:.3s}
+#local-seo .skill:hover{border-color:var(--blue);transform:translateY(-4px)}
+#local-seo .skill .ic{width:46px;height:46px;border-radius:13px;background:#e8ecff;color:var(--blue);display:grid;place-items:center;margin-bottom:16px;transition:.3s}
+#local-seo .skill:hover .ic{background:var(--blue);color:#fff}
+#local-seo .skill svg{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+#local-seo .skill h4{margin:0 0 6px;font-size:16.5px;font-weight:700}
+#local-seo .skill p{margin:0;font-size:14px;line-height:1.55;color:var(--muted)}
+
+/* case studies */
+#local-seo .cases{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+#local-seo .case{background:var(--card);border:1px solid var(--line);border-radius:24px;overflow:hidden;display:flex;flex-direction:column;
+  transition:transform .35s,box-shadow .35s}
+#local-seo .case:hover{transform:translateY(-8px);box-shadow:0 30px 60px -30px rgba(21,48,255,.4)}
+#local-seo .case-shot{aspect-ratio:16/10;background:linear-gradient(135deg,#dfe5ff,#f2f5ff);position:relative;display:grid;place-items:center;overflow:hidden}
+#local-seo .case-shot img{position:absolute;inset:0;z-index:1;width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s}
+#local-seo .case:hover .case-shot img{transform:scale(1.04)}
+#local-seo .case-shot .ph{font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#8a96d6}
+#local-seo .case-num{position:absolute;top:14px;left:14px;font-size:12px;font-weight:800;color:#fff;background:var(--blue);padding:6px 11px;border-radius:999px;z-index:2}
+#local-seo .case-body{padding:26px;display:flex;flex-direction:column;gap:14px;flex:1}
+#local-seo .cat{font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--blue)}
+#local-seo .case h4{margin:0;font-size:24px;font-weight:800;letter-spacing:-.02em;line-height:1.15}
+#local-seo .query{display:flex;gap:9px;align-items:center;font-size:13px;color:var(--muted);background:#f3f5fc;border:1px solid var(--line);
+  padding:9px 13px;border-radius:999px}
+#local-seo .query svg{width:15px;height:15px;stroke:var(--muted);fill:none;stroke-width:2;flex:none}
+#local-seo .svc{font-size:14px;color:var(--muted);line-height:1.55;margin:0}
+#local-seo .svc b{color:var(--ink)}
+#local-seo .rank{display:flex;align-items:center;gap:10px;margin-top:auto;padding:16px;border-radius:16px;background:#f7f9ff;border:1px solid var(--line)}
+#local-seo .rank .side{flex:1;text-align:center}
+#local-seo .rank small{display:block;font-size:10.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
+#local-seo .rank strong{font-size:24px;font-weight:800;letter-spacing:-.02em}
+#local-seo .rank .before strong{color:#c0392b}
+#local-seo .rank .after strong{color:var(--green)}
+#local-seo .rank .arrow{width:34px;height:34px;border-radius:50%;background:var(--blue);color:#fff;display:grid;place-items:center;flex:none;
+  animation:ls-nudge 1.8s ease-in-out infinite}
+#local-seo .rank .arrow svg{width:16px;height:16px;stroke:#fff;fill:none;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+@keyframes ls-nudge{0%,100%{transform:translateX(0)}50%{transform:translateX(4px)}}
+#local-seo .win{display:flex;gap:10px;align-items:flex-start;font-size:14px;font-weight:600;line-height:1.5}
+#local-seo .win svg{width:20px;height:20px;flex:none;stroke:var(--green);fill:none;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round;margin-top:1px}
+
+/* reveal */
+#local-seo .rv{opacity:0;transform:translateY(28px);transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1)}
+#local-seo .rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){#local-seo .rv{opacity:1;transform:none;transition:none}#local-seo .rank .arrow{animation:none}}
+
+@media (max-width:960px){
+  #local-seo{padding:72px 18px}
+  #local-seo .stats,#local-seo .cases{grid-template-columns:1fr}
+  #local-seo .skills{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:560px){#local-seo .skills{grid-template-columns:1fr}}
+</style>
+
+<div class="wrap">
+  <span class="eyebrow rv"><i></i>Local SEO Experience</span>
+  <h2 id="ls-title" class="rv">Turning Local Searches Into <em>Business Growth.</em></h2>
+  <p class="lead rv">Helping businesses dominate local search results through strategic Local SEO and Google Business Profile optimization.</p>
+
+  <!-- STATS -->
+  <div class="stats">
+    <div class="stat hero rv">
+      <span class="tag">Highlight</span>
+      <div class="num"><span class="count" data-to="3">0</span></div>
+      <div class="lbl">Google Business Profiles Ranked in Local 3-Pack</div>
+    </div>
+    <div class="stat rv">
+      <div class="num"><span class="count" data-to="3">0</span></div>
+      <div class="lbl">Successful Local SEO Projects</div>
+    </div>
+    <div class="stat rv">
+      <div class="num">GBP</div>
+      <div class="lbl">Google Business Profile Optimization Expertise</div>
+    </div>
+  </div>
+
+  <!-- SKILLS -->
+  <div class="sub rv">
+    <h3>Core Local SEO Expertise</h3>
+    <p>The toolkit behind every profile I take from invisible to Top 3.</p>
+  </div>
+  <div class="skills">
+    <div class="skill rv"><div class="ic"><svg viewBox="0 0 24 24"><path d="M3 9l1.5-5h15L21 9"/><path d="M4 9v11h16V9"/><path d="M9 20v-6h6v6"/></svg></div><h4>Google Business Profile Optimization</h4><p>Complete, verified, keyword-aligned profiles built to convert views into calls.</p></div>
+    <div class="skill rv"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11.5A7 7 0 005 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></div><h4>Google Maps Ranking</h4><p>Improving proximity, relevance and prominence signals to climb the map results.</p></div>
+    <div class="skill rv"><div class="ic"><svg viewBox="0 0 24 24"><path d="M8 21h8M12 17v4M7 4h10v4a5 5 0 01-10 0V4z"/><path d="M7 6H4a3 3 0 003 4M17 6h3a3 3 0 01-3 4"/></svg></div><h4>Local 3-Pack SEO</h4><p>Strategy focused on the three spots that capture most local clicks.</p></div>
+    <div class="skill rv"><div class="ic"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></div><h4>Local Keyword Research</h4><p>Finding the "service + area" and near-me searches your customers actually use.</p></div>
+    <div class="skill rv"><div class="ic"><svg viewBox="0 0 24 24"><path d="M10 14a4 4 0 005.7 0l3-3a4 4 0 00-5.7-5.7l-1 1"/><path d="M14 10a4 4 0 00-5.7 0l-3 3A4 4 0 0011 18.7l1-1"/></svg></div><h4>NAP Consistency &amp; Citation Building</h4><p>Name, address and phone kept identical across trusted local directories.</p></div>
+    <div class="skill rv"><div class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 14h8"/></svg></div><h4>Local On-Page SEO</h4><p>Location pages, titles, content and internal links tuned for local intent.</p></div>
+    <div class="skill rv"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9L12 3z"/></svg></div><h4>Review &amp; Reputation Management</h4><p>Review generation and professional replies that build trust and rankings.</p></div>
+    <div class="skill rv"><div class="ic"><svg viewBox="0 0 24 24"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg></div><h4>Local Schema Markup</h4><p>LocalBusiness structured data so search engines understand the business clearly.</p></div>
+    <div class="skill rv"><div class="ic"><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></div><h4>Competitor Analysis</h4><p>Reverse-engineering who holds the 3-Pack today and what it takes to replace them.</p></div>
+  </div>
+
+  <!-- CASE STUDIES -->
+  <div class="sub rv">
+    <h3>Local SEO Case Studies</h3>
+    <p>Three real Google Business Profile projects, three Local 3-Pack placements.</p>
+  </div>
+  <div class="cases">
+
+    <!-- PROJECT 01 -->
+    <article class="case rv">
+      <div class="case-shot">
+        <span class="case-num">Project 01</span>
+        <span class="ph">Add images/ilah-gbp.webp</span>
+        <img src="images/ilah-gbp.webp" alt="Ilah Ayurveda Google Business Profile ranking in Local 3-Pack" loading="lazy" onerror="this.remove()">
+      </div>
+      <div class="case-body">
+        <span class="cat">Healthcare / Ayurveda</span>
+        <h4>Ilah Ayurveda</h4>
+        <div class="query"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>post delivery care malappuram</div>
+        <p class="svc"><b>Service:</b> Local SEO &amp; Google Business Profile Optimization</p>
+        <div class="rank">
+          <div class="side before"><small>Before</small><strong>27th</strong></div>
+          <div class="arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
+          <div class="side after"><small>After</small><strong>Top 3</strong></div>
+        </div>
+        <div class="win"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Improved local search visibility and achieved Google Local 3-Pack placement.</div>
+      </div>
+    </article>
+
+    <!-- PROJECT 02 -->
+    <article class="case rv">
+      <div class="case-shot">
+        <span class="case-num">Project 02</span>
+        <span class="ph">Add images/newlook-gbp.webp</span>
+        <img src="images/newlook-gbp.webp" alt="New Look Restaurant Kolappuram Google Business Profile in Local 3-Pack" loading="lazy" onerror="this.remove()">
+      </div>
+      <div class="case-body">
+        <span class="cat">Restaurant / Fast Food</span>
+        <h4>New Look Restaurant</h4>
+        <div class="query"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>restaurant kolappuram</div>
+        <p class="svc"><b>Service:</b> Local SEO &amp; Google Business Profile Optimization</p>
+        <div class="rank">
+          <div class="side before"><small>Before</small><strong>18th</strong></div>
+          <div class="arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
+          <div class="side after"><small>After</small><strong>Top 3</strong></div>
+        </div>
+        <div class="win"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Improved local search visibility and achieved Google Local 3-Pack placement.</div>
+      </div>
+    </article>
+
+    <!-- PROJECT 03 -->
+    <article class="case rv">
+      <div class="case-shot">
+        <span class="case-num">Project 03</span>
+        <span class="ph">Add images/riyas-gbp.webp</span>
+        <img src="images/riyas-gbp.webp" alt="Riyas Associates Engineers &amp; Builders Google Business Profile in Local 3-Pack" loading="lazy" onerror="this.remove()">
+      </div>
+      <div class="case-body">
+        <span class="cat">Civil Engineering / Construction</span>
+        <h4>Riyas Associates Engineers &amp; Builders</h4>
+        <div class="query"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>civil engineering company near me</div>
+        <p class="svc"><b>Service:</b> Local SEO &amp; Google Business Profile Optimization</p>
+        <div class="rank">
+          <div class="side before"><small>Before</small><strong>Not listed</strong></div>
+          <div class="arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
+          <div class="side after"><small>After</small><strong>Top 3</strong></div>
+        </div>
+        <div class="win"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Went from not visible on Google to Local 3-Pack placement.</div>
+      </div>
+    </article>
+
+  </div>
+</div>
+
+<script>
+(function(){
+  var root=document.getElementById('local-seo'); if(!root) return;
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  function countUp(el){
+    var to=+el.dataset.to, dur=1400, t0=null;
+    function pad(n){return n<10?'0'+n:''+n}
+    if(reduce){el.textContent=pad(to);return}
+    function step(ts){
+      if(!t0)t0=ts;
+      var p=Math.min((ts-t0)/dur,1), e=1-Math.pow(1-p,3);
+      el.textContent=pad(Math.round(to*e));
+      if(p<1)requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+
+  var items=root.querySelectorAll('.rv');
+  if(!('IntersectionObserver' in window)){
+    items.forEach(function(n){n.classList.add('in')});
+    root.querySelectorAll('.count').forEach(countUp); return;
+  }
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(en){
+      if(!en.isIntersecting) return;
+      var n=en.target; n.classList.add('in');
+      n.querySelectorAll('.count').forEach(function(c){ if(!c.dataset.done){c.dataset.done=1;countUp(c);} });
+      io.unobserve(n);
+    });
+  },{threshold:.2});
+  items.forEach(function(n,i){ n.style.transitionDelay=(i%3)*90+'ms'; io.observe(n); });
+})();
+</script>
+</section>
